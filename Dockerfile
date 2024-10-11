@@ -1,5 +1,5 @@
 FROM hub.atomgit.com/library/node:20-buster-slim as builder
-WORKDIR 'usr/app'
+WORKDIR '/usr/app'
 COPY package.json .
 RUN npm install
 COPY . .
